@@ -1,0 +1,49 @@
+1. Application Layer
+What It Does: This layer provides network services directly to user applications, enabling communication over the network.
+Key Protocols:
+- HTTP/HTTPS: For web browsing.
+- FTP: For file transfers.
+- SMTP: For email sending.
+Think of It As: The interface where software applications communicate with the network.
+
+2. Presentation Layer
+What It Does: This layer formats and translates data between the application layer and the network. It ensures that data is in a usable format.
+Key Functions:
+- Data encryption/decryption.
+- Data compression.
+- Syntax translation (e.g., converting between different character sets).
+Think of It As: The translator that ensures data is understandable for both ends.
+
+3. Session Layer
+What It Does: This layer manages sessions (connections) between applications. It establishes, maintains, and terminates connections.
+Key Functions:
+- Session establishment.
+- Session management (keeping track of the connection).
+- Session termination.
+Think of It As: The mediator that manages the communication sessions between applications.
+
+4. Transport Layer
+What It Does: This layer ensures reliable or fast data transfer between systems, managing error correction and flow control.
+Key Protocols:
+- TCP: Provides reliable, ordered delivery of a stream of data.
+- UDP: Offers faster, but less reliable transmission.
+Think of It As: The delivery service that ensures packages arrive correctly and in order.
+
+5. Network Layer
+What It Does: This layer handles routing and addressing, determining how data is sent across the network.
+Key Protocol:
+- IP: Responsible for logical addressing and routing of packets.
+Think of It As: The navigation system that determines the best path for data to reach its destination.
+
+6. Data Link Layer
+What It Does: This layer provides node-to-node data transfer and handles error correction from the physical layer.
+Key Functions:
+- Framing: Dividing data into frames.
+- MAC addressing: Using hardware addresses to identify devices on the same local network.
+Think of It As: The highway that transports data frames between devices on the same local network.
+
+7. Physical Layer
+What It Does: This layer deals with the physical connection between devices, including the electrical signals, light signals, or radio waves used to transmit data.
+Key Functions:
+- Defines cables, switches, and the physical aspects of the network.
+Think of It As: The physical medium (cables, fiber optics, wireless) through which data travels.

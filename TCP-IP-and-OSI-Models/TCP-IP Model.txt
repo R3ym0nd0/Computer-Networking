@@ -1,0 +1,32 @@
+1. Application Layer
+Function: This is where user interactions occur. It provides interfaces for applications to communicate over the network.
+Protocols: Common protocols include:
+- HTTP/HTTPS: For web browsing.
+- FTP: For file transfer.
+- SMTP/IMAP/POP3: For email transmission.
+- DNS: For translating domain names to IP addresses.
+Description: The application layer allows software applications to send and receive data over the network. It handles data formatting, encryption, and other application-level services.
+
+2. Transport Layer
+Function: Responsible for reliable data transfer between devices. It ensures that data packets are delivered in the correct order and without errors.
+Protocols:
+- TCP (Transmission Control Protocol): Provides reliable, ordered, and error-checked delivery of data. It establishes a connection before transmitting data.
+- UDP (User Datagram Protocol): Provides a simpler, faster, but less reliable service. It does not guarantee delivery or order, making it suitable for applications like video streaming or gaming.
+Description: This layer breaks data from the application layer into segments (TCP) or datagrams (UDP) for transmission. It manages flow control and error correction.
+
+3. Internet Layer
+Function: Responsible for addressing and routing packets of data across the network. It determines the best path for data to travel.
+Protocols:
+- IP (Internet Protocol): The primary protocol for routing data across networks. It includes:
+- IPv4: The most widely used version, with a 32-bit address space.
+- IPv6: The newer version, designed to replace IPv4, with a larger address space (128 bits).
+- ICMP (Internet Control Message Protocol): Used for error messages and operational queries (like ping).
+Description: This layer packages transport layer segments into packets and adds IP addresses to facilitate routing.
+
+4. Network Interface Layer (Link Layer)
+Function: Handles the physical transmission of data over the network medium (e.g., Ethernet, Wi-Fi). It manages how devices on the same network communicate with each other.
+Protocols: Includes various protocols for different types of network technologies, such as:
+- Ethernet: Commonly used for wired networks.
+- Wi-Fi (IEEE 802.11): Used for wireless networks.
+- PPP (Point-to-Point Protocol): Used for direct connections.
+Description: This layer takes care of framing packets for transmission over the network and includes hardware addressing (like MAC addresses).
