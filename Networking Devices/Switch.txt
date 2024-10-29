@@ -1,0 +1,24 @@
+Process of a Switch
+
+1.Receiving a Frame:
+- The switch receives a data frame from one of its ports.
+
+2.MAC Address Learning:
+- The switch examines the source MAC address of the incoming frame.
+It updates its MAC address table (CAM table) by associating the source MAC address with the port it received the frame on.
+
+3.Frame Forwarding:
+- The switch checks the destination MAC address in the frame.
+- If the MAC address is found in the MAC address table:
+  - The switch forwards the frame only to the corresponding port (unicast).
+- If the MAC address is not found:
+  - The switch broadcasts the frame to all ports except the one it came from (flooding).
+
+4.Collision Domain Management:
+Each port operates in its own collision domain, allowing multiple devices to transmit data simultaneously without collisions.
+
+5.Frame Filtering:
+- The switch only sends frames to the specific device intended to receive them, thereby reducing unnecessary traffic on the network.
+
+6.Handling VLANs (if supported):
+- If the switch supports VLANs, it can segregate traffic within the network based on VLAN configurations, further enhancing network efficiency and security.

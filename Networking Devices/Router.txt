@@ -1,0 +1,25 @@
+Process of a Router
+
+1.Receiving a Packet:
+- The router receives a data packet from one of its connected networks.
+
+2.Examining the Packet Header:
+- The router examines the destination IP address in the packet header to determine where the packet needs to go.
+
+3.Routing Table Lookup:
+- The router checks its routing table to find the best path for the packet based on the destination IP address.
+- The routing table contains information about various network destinations and the next hop (next router or device) to reach them.
+
+4.Deciding on the Next Hop:
+- If a matching entry is found in the routing table, the router determines the next hop (the next router or device) to which the packet should be forwarded.
+- If no matching entry is found, the router may drop the packet or send it to a default route, if one is configured.
+
+5.Packet Forwarding:
+- The router encapsulates the packet in a new frame suitable for the outgoing network.
+- It forwards the packet to the designated next hop or directly to the destination network, sending it out through the appropriate interface.
+
+6.Network Address Translation (NAT) (if applicable):
+- If the router performs NAT, it translates the private IP address of the source device to a public IP address for outgoing packets and vice versa for incoming packets.
+
+7.Handling Routing Protocols (if applicable):
+- Routers may use routing protocols (e.g., RIP, OSPF, BGP) to dynamically update their routing tables based on network changes, ensuring efficient routing.

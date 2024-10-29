@@ -1,0 +1,13 @@
+Process of a Hub
+
+1.Receiving a Data Packet:
+- The hub receives a data packet from one of its connected devices.
+
+2.Broadcasting the Packet:
+- The hub does not check the destination address in the packet. Instead, it broadcasts (repeats) the packet to all other ports, regardless of the intended destination.
+
+3.All Devices Receive the Packet:
+- Every device connected to the hub receives the packet, but only the device with the matching destination address processes it. All other devices ignore the packet.
+
+4.Collision Domain:
+- All devices connected to a hub share a single collision domain, meaning data packets can collide if multiple devices transmit simultaneously. This reduces efficiency as more devices are added.
