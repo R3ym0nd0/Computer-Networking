@@ -1,0 +1,17 @@
+1.TCP(Transmission Control Protocol) - A Connection oriented protocol that reliable. It use 3 way handshake.
+
+•3 Way Handshake
+
+           SYN
+PC1 ------------------> PC2
+
+          SYN ACK
+PC1 <------------------ PC2
+
+        ACK RECEIVED
+PC1 ------------------> PC2
+
+    Connection Established
+PC1 <-----------------> PC2
+
+2.UDP(User Datagram Protocol) - A connectionless oriented protocol.It's faster than TCP.

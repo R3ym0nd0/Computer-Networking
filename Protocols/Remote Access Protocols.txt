@@ -1,0 +1,3 @@
+1.Telnet(Port 23) - An application protocol used on the Internet or local area networks to provide a bidirectional interactive text-oriented communication facility using a virtual terminal connection.
+2.SSH (Secure Shell/Port 22) - A cryptographic network protocol for operating network services securely over an unsecured network, most commonly used for remote login to computer systems.
+3.RDP (Remote Desktop Protocol/Port 3389) - RDP allows users to connect to another computer over a network and provides a graphical user interface to access applications and desktop environments.

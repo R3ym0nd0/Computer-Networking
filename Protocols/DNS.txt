@@ -1,0 +1,24 @@
+#DNS Resolution Process
+
+1.Resolver Request to Root Server:Your DNS resolver sends a query to a root name server asking for the IP address of example.com.
+
+2.Root Server Directs Resolver to TLD Server:The root server responds with a referral to the TLD (Top-Level Domain) server for the .com domain.
+
+3.Resolver Request to TLD Server:The resolver then queries the TLD server for the authoritative name servers responsible for example.com.
+
+4.TLD Server Directs Resolver to Authoritative Server:The TLD server responds with a referral to the authoritative name server for example.com.
+
+5.Resolver Request to Authoritative Server:The resolver queries the authoritative name server for example.com to get the actual IP address.
+
+6.Authoritative Server Responds with IP Address:The authoritative server provides the IP address for example.com.
+
+7.Resolver Sends IP Address to Client:The resolver sends the IP address back to your computer.
+
+
+Summary: DNS Resolution Process
+
+1.Resolver queries Root.
+2.Resolver queries TLD.
+3.TLD refers to Authoritative.
+4.Authoritative returns IP to Resolver.
+5.Resolver sends IP to Client.

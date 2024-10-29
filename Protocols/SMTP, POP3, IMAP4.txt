@@ -1,0 +1,13 @@
+#Sender
+1.SMTP (Simple Mail Transfer Protocol) - An Internet standard for email transmission across IP networks, used to send and receive email messages.
+•Port 25 - Standard port for SMTP.Often used for unencrypted communication and internal relay.
+•Port 587 - Used for SMTP with STARTTLS encryption, commonly used for sending emails securely.
+•Port 465 - Historically used for SMTP with SSL/TLS encryption(less common).
+
+#Retriever
+2.POP 3 (Post Office Protocol Ver. 3) - A protocol used by local email clients to retrieve emails from a remote server over a TCP/IP connection.
+•Port 110 - Used for POP 3 with optional encryption via STARTTLS.
+•Port 995 - Used for POP 3 with SSL/TLS encryption from the start.
+3.IMAP 4 (Internet Message Access Protocol Ver. 4) - A protocol for email retrieval and storage, allowing a client to access and manipulate email messages on the server.
+•Port 143 - Used for IMAP with optional encryption via STARTTLS.
+•Port 993 - Used for IMAP with SSL/TLS encryption from the start.

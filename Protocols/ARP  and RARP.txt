@@ -1,0 +1,55 @@
+Scenario:
+1.Your laptop private IP Address (192.168.43.88) wants to go to default gateway to go to external network but your  laptop didn't know the MAC Address of Default Gateway(Router).
+2.Your Private IP address now send an ARP request using broadcast address (255.255.255.255) and all device connect to your network will receive it.
+
+
+Example:
+Who is 192.168.43.1?, give me your MAC Address please.
+
+            ARP Request Packet Details:
+            
+Source MAC Address: 00:1A:2B:3C:4D:5E
+Source IP Address: 192.168.43.88
+Target IP Address: 192.168.43.1
+Target MAC Address: ff:ff:ff:ff:ff:ff
+
+Step 3 - the router send ARP response now responds and give MAC Address to you. Example:
+Hey 192.168.43.88, I'm 192.168.43.1, here's my MAC Address.
+
+            ARP Response Packet Details:
+
+Source IP Address: 192.168.43.1
+Source MAC Address: 00:D1:B2:E5:3C:A4            
+Target IP Address: 192.168.43.88
+Target MAC Address: 00:1A:2B:3C:4D:5E
+
+
+2.RARP ( Reverse Address Resolution Protocol) - A protocol used by a computer to request its IP address from an administrative host, given its physical MAC address.
+
+Client Sends RARP Request:
+
+1.A device (the RARP client) that needs to find its IP address sends a broadcast RARP request on the local network.
+The request contains the client's MAC address.
+
+2.RARP Server Receives Request:
+All devices on the local network receive the RARP broadcast, but only the RARP server (or a designated server) listens for RARP requests.
+
+3.RARP Server Looks Up IP Address:
+The RARP server checks its local database to find the IP address associated with the MAC address provided in the RARP request.
+The database usually contains mappings of MAC addresses to their corresponding IP addresses.
+
+4.RARP Server Sends RARP Reply:
+If the server finds a matching IP address, it sends a unicast RARP reply back to the requesting client.
+The reply contains the IP address associated with the client's MAC address.
+
+5.Client Receives RARP Reply:
+The RARP client receives the reply and can now use the provided IP address for further communication on the network.
+
+6.Client Configures IP Address:
+The client configures itself with the obtained IP address and can now participate in IP-based communication on the network.
+
+Summary of RARP Process:
+Client → Broadcast RARP request with MAC address.
+Server → Receives request and looks up the IP address.
+Server → Sends back a unicast RARP reply with the IP address.
+Client → Receives the reply and configures the IP address.

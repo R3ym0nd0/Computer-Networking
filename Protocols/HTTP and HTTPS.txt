@@ -1,0 +1,3 @@
+1.HTTP (Hypertext Transfer Protocol/Port 80) - An application protocol for distributed, collaborative, hypermedia information systems, serving as the foundation of data communication on the World Wide Web.
+
+2.HTTPS (Hypertext Transfer Protocol Secure/Port 443) - An extension of HTTP, it uses TLS (Transport Layer Security) or SSL (Secure Sockets Layer) to encrypt data for secure communication over a computer network.

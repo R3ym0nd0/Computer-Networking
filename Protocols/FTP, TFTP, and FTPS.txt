@@ -1,0 +1,14 @@
+1.FTP (File Transfer Protocol) - A standard network protocol used to transfer files from one host to another over a TCP-based network, such as the Internet.
+•Port 21: This is the default port for FTP control commands. FTP uses port 21 to establish the command channel, which is used to send commands and receive responses.
+•Port 20: FTP uses port 20 for the data channel in active mode, where data is transferred between the client and server.
+
+2.TFTP (Trivial File Transfer Protocol) - A simple, lock-step file transfer protocol which allows a client to get or put a file onto a remote host.
+•Port 69: TFTP uses port 69 for both sending and receiving files. It is a simple protocol used for transferring files without the need for complex features like authentication or directory listings.
+
+3.SFTP (SSH File Transfer Protocol) - A network protocol that provides file access, file transfer, and file management functionalities over any reliable data stream, securely.
+•Port 22: SFTP operates over port 22, the same port used by SSH (Secure Shell). SFTP provides a secure channel for file transfer using the SSH protocol.
+
+4.FTPS (FTP Secure):
+Two Methods:
+•Port 21: For explicit FTPS, the client initially connects to port 21 to establish a control session. Once the connection is secure, it negotiates encryption for the data transfer(SSL/TLS). Explicit FTPS use port 20 too to transfer data when active mode.
+•Ports 989 and 990: For implicit FTPS, the control and data connections are automatically encrypted. Port 990 is used for control commands, and port 989 is often used for data transfer.

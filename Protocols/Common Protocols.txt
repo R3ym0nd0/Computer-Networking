@@ -1,0 +1,19 @@
+Ports 20: FTP Data Transfer 
+Port 21: FTP Control/Explicit FTPS
+Port 990: Implicit FTPS
+Port 22: SSH/SFTP/SCP
+Port 23: Telnet
+Port 25: SMTP
+Port 53: DNS
+Ports 67: DHCP Server
+Port 68: DHCP Client 
+Port 80: HTTP
+Port 110: POP3
+Port 143: IMAP
+Port 443: HTTPS
+Port 3306: MySQL
+Port 3389: RDP
+Port 5432: PostgreSQL
+Port 5900: VNC
+Port 6379: Redis
+Port 8080: HTTP Alternative

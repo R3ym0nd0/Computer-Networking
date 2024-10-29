@@ -1,0 +1,47 @@
+                             SCENARIO
+                             
+Step 1 - I buy my new laptop
+Step 2 - I connect it to our router, type password, then now I'm connected to our router 
+Step 3 - Now I want to go to google and type YouTube.com
+Step 4 - Now I'm in YouTube
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                     DHCP INFORMATION
+                     
+•DHCP OFFER:
+
+Private IP Address:
+Start - 192.168.43.1
+End - 192.168.43.254
+Lease Time - 1 Day
+Subnet Mask - 255.255.255.0
+Default Gateway - 192.168.43.1
+DNS Public IP Address - 8.8.8.8
+
+•MAC Address - 00:1A:2B:3C:4D:5E
+•Client Broadcast Address - 255.255.255.255
+
+Step 1 Connect to wifi - I connect to our wifi for the first time and I type password .
+
+Step 2 Broadcast Address - I type Enter and My device broadcasts a DHCP Discover message using the broadcast address (255.255.255.255) because it does not yet know the IP address of the DHCP server. The DHCP server receives this message and responds directly to my device's MAC address with a DHCP Offer.
+
+Step 3 DHCP Offer - DHCP server then offer me a following:
+
+Private IP Address:
+Start - 192.168.43.1
+End - 192.168.43.254
+Lease Time - 1 Day
+Subnet Mask - 255.255.255.0
+Default Gateway - 192.168.43.1
+DNS Public IP Address - 8.8.8.8
+
+Step 3 DHCP Request - Me now requesting.
+
+Step 4 DHCP ACK - DHCP now give me all of that he offer directly to my MAC address.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Broadcast Address (255.255.255.255): When you first connect to the Wi-Fi, your device uses a broadcast address (255.255.255.255) to send a DHCP Discover message. This is sent to all devices on the network because the client doesn't yet know the address of the DHCP server.
+
+DHCP Offer: The DHCP server receives the Discover message and responds with a DHCP Offer message. This offer includes the IP address and network settings. This Offer is sent to your device's MAC address but is broadcast to the network.
+
+DHCP Request: Your device then sends a DHCP Request message to the server, requesting the offered IP address and settings. This request is also broadcast to the network but specifies your MAC address.
+
+DHCP Acknowledgement (ACK): The DHCP server responds with a DHCP Acknowledgement (ACK) message, confirming the lease and providing the final configuration to your device.

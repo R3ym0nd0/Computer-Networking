@@ -1,0 +1,39 @@
+--> SEGMENT, PACKET, FRAME <--
+
+           FRAME
+
+Destination MAC: 00:B1:C3:2D:A4:E5 Source MAC: 00:A1:2B:3C:4D:5E 
+Type: 0x0800 (IPv4) or 0x86DD (IPv6)
+FCS: 0xABCD1234 
+Payload (Packet) 
+------------------------------------------
+           PACKET
+                              
+Source IP: 10.10.10.10
+Destination IP: 11.11.11.11 
+TTL: 64 
+Protocol: 6 (TCP) or 17(UDP)
+Total Length: 60 bytes 
+Payload (Segment) 
+------------------------------------------
+           SEGMENT
+TCP:
+
+Source Port: 4040
+Destination Port: 443 
+Sequence Number: 1000  
+Acknowledgment Number: 0  
+Flags: SYN 
+Window Size: 65535 
+Checksum: 0xABCD 
+Payload (Application Data) 
+
+UDP:
+
+Source Port: 4040
+Destination Port: 443 
+Window Size: 65535 
+Checksum: 0xABCD 
+Payload (Application Data) 
+
+------------------------------------------
