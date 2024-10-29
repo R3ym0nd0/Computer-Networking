@@ -1,0 +1,92 @@
+FLSM Process:
+
+CIDR Notation: 192.168.43.0/24
+Network Range: 192.168.43.0 to 192.168.43.255
+Total Hosts: 256
+
+Goal: Number of Subnets: 4
+================================================
+
+Steps:
+
+Step 1: Borrowing Bits
+To create 4 subnets, use 2 borrowed bits.
+
+Step 2: Adjusting the Prefix Length
+Add the 2 borrowed bits to the original prefix length:
+/24 + 2 = /26 (New CIDR Notation: 192.168.43.0/26)
+
+Step 3: Identifying the Network Address
+Convert the IP address (192.168.43.0) and subnet mask (255.255.255.0) into binary.
+
+Step 4: Subnet Mask in Binary
+The original prefix length (/24) means 24 bits:
+11111111.11111111.11111111.00000000
+This shows 24 ones and 8 zeros.
+
+Step 5: Convert IP and Subnet Mask to Binary
+
+IP Address: 11000000.10101000.00101011.00000000
+Subnet Mask: 11111111.11111111.11111111.00000000
+
+Step 6: Perform the AND Operation
+
+IP Address: 11000000.10101000.00101011.00000000
+Subnet Mask: 11111111.11111111.11111111.00000000
+Result: 11000000.10101000.00101011.00000000
+(1 AND 1 = 1; 1 AND 0 = 0)
+
+Step 7: Convert Result to IP Address
+Use binary place values to convert the result:
+
+1st Octet: 11000000 = 192
+2nd Octet: 10101000 = 168
+3rd Octet: 00101011 = 43
+4th Octet: 00000000 = 0
+Network Address: 192.168.43.0
+
+Step 8: Identifying the Broadcast Address
+Convert the Network Address (192.168.43.0) to binary and reverse the Subnet Mask for the new prefix length (/26):
+
+Subnet Mask in Binary: 11111111.11111111.11111111.11000000
+Reversed: 00000000.00000000.00000000.00111111 (Wild Card Mask)
+
+Step 9: Perform the OR Operation
+
+IP Address: 11000000.10101000.00101011.00000000
+Wild Card Mask: 00000000.00000000.00000000.00111111
+Result: 11000000.10101000.00101011.00111111
+(1 OR 0 = 1; 0 OR 0 = 0)
+
+Step 10: Convert to IP Address
+Use binary place values:
+
+1st Octet: 11000000 = 192
+2nd Octet: 10101000 = 168
+3rd Octet: 00101011 = 43
+4th Octet: 00111111 = 63
+Broadcast Address: 192.168.43.255
+Step 11: Available Hosts in New CIDR Notation
+The new CIDR Notation is 192.168.43.0/26.
+Subtract from the maximum prefix length (/32): 32 - 26 = 6.
+2**6 equals 64.
+Available Hosts: 64 - 2 = 62 (Subtracting for Broadcast and Network addresses)
+
+Step 12: Determining the IP Range
+IP Range: 192.168.43.0 to 192.168.43.63
+
+Overall Result for 1st Subnet:
+Result: 192.168.43.0/26
+Network Address: 192.168.43.0
+Broadcast Address: 192.168.43.63
+Subnet Mask: 255.255.255.192
+Prefix Length: /26
+Available Hosts: 62
+IP Range: 192.168.43.0 to 192.168.43.63
+
+Subsequent Subnets:
+For additional subnets, continue from the last result:
+
+Subnet 2: 192.168.43.64/26
+Subnet 3: 192.168.43.128/26
+Subnet 4: 192.168.43.192/26

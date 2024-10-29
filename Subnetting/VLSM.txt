@@ -1,0 +1,61 @@
+VLSM Process:
+
+Variable Length Subnet Masking (VLSM) Process:
+
+CIDR Notation: 192.168.43.0/24
+Network Range: 192.168.43.0 to 192.168.43.255
+Total Hosts: 256
+
+Goal: Divide into subnets of varying sizes based on host requirements.
+Example requirement:
+
+Subnet A: 50 hosts
+Subnet B: 30 hosts
+Subnet C: 20 hosts
+Subnet D: 10 hosts
+===========================================================================
+
+Steps:
+Step 1: Sort Subnets by Host Requirements
+Subnet A: 50 hosts
+Subnet B: 30 hosts
+Subnet C: 20 hosts
+Subnet D: 10 hosts
+
+Step 2: Determine Subnet Sizes (Based on Power of 2)
+To satisfy the host requirements:
+
+Subnet A: 64 hosts (requires 6 bits, 2^6 = 64)
+Subnet B: 32 hosts (requires 5 bits, 2^5 = 32)
+Subnet C: 32 hosts (requires 5 bits, 2^5 = 32)
+Subnet D: 16 hosts (requires 4 bits, 2^4 = 16)
+
+Step 3: Assign Subnets in the Address Space
+Subnet A
+
+CIDR Notation: 192.168.43.0/26 (64 hosts)
+Network Address: 192.168.43.0
+Broadcast Address: 192.168.43.63
+IP Range: 192.168.43.1 to 192.168.43.62
+Available Hosts: 62
+Subnet B
+
+CIDR Notation: 192.168.43.64/27 (32 hosts)
+Network Address: 192.168.43.64
+Broadcast Address: 192.168.43.95
+IP Range: 192.168.43.65 to 192.168.43.94
+Available Hosts: 30
+Subnet C
+
+CIDR Notation: 192.168.43.96/27 (32 hosts)
+Network Address: 192.168.43.96
+Broadcast Address: 192.168.43.127
+IP Range: 192.168.43.97 to 192.168.43.126
+Available Hosts: 30
+Subnet D
+
+CIDR Notation: 192.168.43.128/28 (16 hosts)
+Network Address: 192.168.43.128
+Broadcast Address: 192.168.43.143
+IP Range: 192.168.43.129 to 192.168.43.142
+Available Hosts: 14

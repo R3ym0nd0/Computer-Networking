@@ -1,0 +1,33 @@
+Supernetting Process:
+
+Goal: Combine multiple Class C networks for a larger address space.
+===========================================================================
+Networks to Combine: 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24, 192.168.3.0/24
+Steps:
+
+Step 1: Identify the Common Bits
+Find the common bits in the IP addresses:
+
+192.168.0.0 = 11000000.10101000.00000000.00000000
+192.168.1.0 = 11000000.10101000.00000001.00000000
+192.168.2.0 = 11000000.10101000.00000010.00000000
+192.168.3.0 = 11000000.10101000.00000011.00000000
+Comparing =    same(8)  same(8) not same  same(8)
+Result =          8  +    8    +   0     +  9     = 22 bits
+
+Common Prefix: First 22 bits are identical (192.168.0.0/22)
+
+Step 2: New CIDR Notation
+The common bits give a new CIDR notation:
+
+Combined Network: 192.168.0.0/22
+Step 3: Determine the Supernet Range
+Network Address: 192.168.0.0
+Broadcast Address: 192.168.3.255
+IP Range: 192.168.0.0 to 192.168.3.255
+Step 4: Calculate Total Hosts
+Hosts per Subnet (/22): 2^(32 - 22) = 1024 - 2 = 1022 hosts
+Result:
+Supernet: 192.168.0.0/22
+Network Range: 192.168.0.0 to 192.168.3.255
+Available Hosts: 1022
