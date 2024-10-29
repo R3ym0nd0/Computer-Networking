@@ -13,7 +13,7 @@ Find the common bits in the IP addresses:
 192.168.2.0 = 11000000.10101000.00000010.00000000
 192.168.3.0 = 11000000.10101000.00000011.00000000
 Comparing =    same(8)  same(8) not same  same(8)
-Result =          8  +    8    +   0     +  9     = 22 bits
+Result =          8  +    8    +   0     +  8     = 22 bits
 
 Common Prefix: First 22 bits are identical (192.168.0.0/22)
 
