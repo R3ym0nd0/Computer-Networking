@@ -1,0 +1,14 @@
+•FIREWALL
+- ACL (Access Control List): A set of rules that control incoming and outgoing traffic based on criteria such as IP addresses, port numbers, and protocols.
+
+Types of Firewalls:
+1.Host-Based Firewall:A software firewall installed on individual computers.Protects only the host computer where it is installed.
+2.Network-Based Firewall:A combination of hardware and software that protects the entire network.Often placed at the network's edge to monitor and filter traffic entering or leaving the network.
+
+IDS/IPS:
+1.Intrusion Detection System (IDS): Monitors network traffic for suspicious activity and sends alerts if potential threats are detected.
+2.Intrusion Prevention System (IPS): Monitors network traffic for suspicious activity and takes actions to prevent potential threats, such as blocking traffic.
+
+Methods of Traffic Inspection:
+1.Stateful Inspection: Monitors the state of active connections and makes decisions based on the context of the traffic (e.g., previous packets in the connection).More secure and intelligent, as it considers the state and characteristics of the traffic.
+2.Stateless Inspection: Uses predefined rules in an ACL to allow or deny traffic without considering the state of the connection.Simpler and faster but less secure compared to stateful inspection.
