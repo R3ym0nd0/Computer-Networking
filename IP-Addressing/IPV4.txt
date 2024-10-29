@@ -1,0 +1,29 @@
+IPv4 Addresses:
+Format: Consists of four octets (8 bits each), represented in decimal format, separated by dots (e.g., 192.168.1.1).
+Range: Can range from 0.0.0.0 to 255.255.255.255.
+
+Network Address: The starting address of a range of IP addresses that identifies a specific network or subnet.
+Broadcast Address: The highest address in that range, used to send data packets to all devices within that network or subnet simultaneously.
+
+Classes:
+Class A: 1.0.0.0 to 126.255.255.255 (large networks).
+Class B: 128.0.0.0 to 191.255.255.255 (medium networks).
+Class C: 192.0.0.0 to 223.255.255.255 (small networks).
+Class D: 224.0.0.0 to 239.255.255.255 (multicast).
+Class E: 240.0.0.0 to 255.255.255.255 (experimental).
+
+8 bit octets Chart
+------------------------------------
+128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+------------------------------------
+
+Example:
+IPV4 - 97.32.100.24
+
+Translate into Binary:
+1st Octet 97 - 01100001
+2nd Octet 32 - 00100000
+3rd Octet 100 - 01100100
+4th Octet 24 - 00011000
+
+Decimal Presentation - Every Numbers in every octets are called Decimal Presentation.

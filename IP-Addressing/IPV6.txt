@@ -1,0 +1,34 @@
+IPv6 Addresses:
+
+Format: Consists of eight groups of four hexadecimal digits, separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+Purpose: Designed to replace IPv4 due to the exhaustion of available addresses. Offers a significantly larger address space.
+
+4 Bit Chart
+-----------------    
+| 8 | 4 | 2 | 1 |
+-----------------
+
+Alphabet Chart
+
+10 = a
+11 = b
+12 = c
+13 = d
+14 = e
+15 = f
+
+Example:
+IPV6 - fe80:0db8:85a3:0000:0000:8a2e:0370:7334
+
+Translate into Binary:
+
+1st Segment fe80: 1111 1110 1000 0000
+2nd Segment 0db8: 0000 1101 1011 1000
+3rd Segment 85a3: 1000 0101 1010 0011
+4th Segment 0000: 0000 0000 0000 0000
+5th Segment 0000: 0000 0000 0000 0000
+6th Segment 8a2e: 1000 1010 0010 1110
+7th Segment 0370: 0000 0011 0111 0000
+8th Segment 7334: 0111 0011 0011 0100
+
+Hexadecimal Presentation - Every letters (a - f) and numbers (1 - 8) in segments are called Hexadecimal Presentation.
