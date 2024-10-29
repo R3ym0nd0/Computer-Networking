@@ -1,0 +1,10 @@
+1.Star Topology - In this topology, each node (PC1, PC2, PC3, PC4) is connected to a central device (a switch or hub) using Ethernet cables. All data passes through the central device.
+2.Bus Topology - All devices are connected to a single central cable (bus). Data sent from a device travels along the bus and is received by all other devices.
+3.Ring Topology - Each device has exactly two neighbors for communication purposes, and all devices are connected in a closed loop or ring. Data travels in one direction (or both directions in a dual ring topology).
+4.Mesh Topology - Every device is connected to every other device. This provides high redundancy and reliability.
+5.Tree (Hierarchical) Topology - It combines characteristics of star and bus topologies. Multiple star networks are connected together using a bus.
+6.Hybrid Topology - A combination of two or more different topologies, such as star-bus or star-ring.
+7.Point-to-Point Topology - A direct connection between two devices, allowing for a single communication path.
+8.Client-Server Topology - Clients (PCs) connect to a central server. The server provides resources and services to the clients.
+9.Point-to-Multipoint Topology - A single main connection point (like a base station) connects to multiple devices.
+10.Peer-to-Peer Topology - Each device can act as both a client and a server. All devices have equal status and can share resources directly with each other.
